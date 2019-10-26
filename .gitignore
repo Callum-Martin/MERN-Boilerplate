@@ -1,0 +1,6 @@
+node_modules
+/client/build
+/server/build
+.env
+.git
+/client/src/assets/css

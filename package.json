@@ -1,0 +1,59 @@
+{
+  "name": "MERN-Boilerplate",
+  "version": "1.0.0",
+  "description": "Full Stack MERN Boilerplate with user Authentication",
+  "author": "Callum Martin",
+  "license": "ISC",
+  "homepage": "https://github.com/Callum-Martin/MERN-Boilerplate#readme",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "export CAPTCHA=true && export NODE_ENV=development && node ./bin/www",
+    "server": "cd server && export NODE_ENV=development && nodemon server.js",
+    "server-install": "cd server && npm install",
+    "client": "cd client && npm start",
+    "client-install": "cd client && npm install",
+    "root-install": "npm install",
+    "setup": "concurrently \"npm run server-install\" \"npm run client-install\" \"npm run root-install\"",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "pretty-quick": "pretty-quick"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Callum-Martin/MERN-Boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Callum-Martin/MERN-Boilerplate/issues"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.3",
+    "crypto": "^1.0.1",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.20.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-utils": "^1.4.3",
+    "graphql": "^14.0.2",
+    "lodash": "^4.17.15",
+    "prettier-eslint": "^9.0.0",
+    "react-animations": "^1.0.0",
+    "subscriptions-transport-ws": "^0.9.15"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "concurrently": "^3.5.0",
+    "husky": "^2.2.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.14.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
