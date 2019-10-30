@@ -6,6 +6,7 @@ This is a simple Mern Boilerplate with user authentication. These instructions w
 
 ```sh
 # Install Packages
+$ npm i
 $ npm run setup
 # Installs the packages in the client, server and root directories.
 
@@ -16,10 +17,10 @@ $ npm run dev
 
 ## Built With
 
-* [ReactJS](https://reactjs.org/)
-* [Express.js](http://expressjs.com)
-* [NodeJS](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
+- [Express.js](http://expressjs.com)
+- [NodeJS](https://nodejs.org/en/)
 
 ## Authors
 
-* **Callum Martin** - *Lead Developer* - (https://github.com/Callum-Martin)
+- **Callum Martin** - _Lead Developer_ - (https://github.com/Callum-Martin)

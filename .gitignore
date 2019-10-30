@@ -3,4 +3,3 @@ node_modules
 /server/build
 .env
 .git
-/client/src/assets/css
